@@ -15,7 +15,7 @@ $(function () {
     // 너무 빨리 사라지므로 조금 있다가 사라지게끔
     // setTimeout(동작, 시간)
     setTimeout(function () {
-      $target.fadeOut();
+      $target.fadeOut().remove(); // 사라지고 나서 html구조에서 지워져라
     }, 1000);
   });
 });
